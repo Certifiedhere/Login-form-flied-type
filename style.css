@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  .login-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+  }
+
+  .sub {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+
+  .holder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-holder {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .input {
+    height: 2.5rem;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 18rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .input:focus {
+    border-color: #ffa500;
+  }
+
+  .placeholder,
+  .password {
+    position: absolute;
+    left: 8px;
+    background-color: #fff;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #777;
+    pointer-events: none;
+  }
+
+  .placeholder {
+    top: 10px;
+  }
+
+  .password {
+    top: 10px;
+  }
+
+  .input:not(:placeholder-shown):not(:focus)+.placeholder,
+  .input:not(:placeholder-shown):not(:focus)+.password,
+  .input:focus+.placeholder,
+  .input:focus+.password {
+    transform: scale(0.75) translateY(-24px) translateX(-5px);
+    color: #ffa500;
+  }
+
+  .button {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .button:hover {
+    background-color: #a58549;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px; 
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
